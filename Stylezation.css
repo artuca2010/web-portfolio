@@ -1,7 +1,10 @@
 * {
-    background-color: rgb(0, 0, 59);
     color: #fff;
     list-style: none;
+}
+
+body {
+    background-color: rgb(0, 0, 59);
 }
 /*Header Sections ----------///-----*/
 .HeaderContainer {
@@ -14,7 +17,6 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    font-weight: bold;
     font-weight: bold;
 }
 /*Main Sections ----------///-----*/
@@ -36,7 +38,6 @@
 
 #MainTitle {
     color: white;
-    width: 30vw;
     margin: 0;
     width: 100%;
     font-weight: bold;
@@ -49,7 +50,6 @@
 }
 #MiniSubtitle {
     color: rgb(252, 252, 252);
-    width: 30vw;
     margin: 1;
     width: 100%;
     height: 15;
@@ -66,7 +66,6 @@
 
 #TalkwithMeButton {
     color: #000000;
-    background-color: rgb(24, 24, 24);
     width: 8vw;
     border-radius: 0.4vw;
     height: 15;
@@ -82,7 +81,7 @@
   background-color: rgba(172, 172, 172, 0.7); 
   padding: 15px;
   border-radius: 0.5vw;
-  width: fit-content;
+  width: 600px;
 }
 
 /* --------------------------------------------------------- */
@@ -98,12 +97,50 @@
   margin: 0;
   font-weight: bold;
   color: #ffffff;
-  background-color: rgba(172, 172, 172, 0.7);
 }
 
-.DisplayedDescriptions {
-  margin: 5px 0 0 0;
-  color: #ffffff;
-  background-color: rgba(172, 172, 172, 0.7);
-  font-size: 1rem;
+.DisplayedDescriptions { 
+  margin: 5px 0 0 0; 
+  color: #ffffff; 
+  font-size: 1rem; 
+} 
+
+/*----Bottom Main Section--------*/ 
+#BottomSection { 
+  display: flex; 
+  flex-direction: row; 
+  gap: 15px; 
+} 
+
+/* ALTERADO APENAS AQUI PARA FORÇAR O QUADRADO */
+.BottomOptions { 
+  width: 200px;               /* Ajustado para caber melhor na sua barra lateral de 30vw */
+  aspect-ratio: 1 / 1;        /* FORÇA o elemento a ser um quadrado perfeito (Proporção 1:1) */
+  height: auto;               /* Deixa o aspect-ratio controlar a altura com base na largura */
+  margin-top: 2vw; 
+  border-radius: 16px;        
+  background-color: rgb(255, 255, 255); 
+  border: 2px solid rgba(128, 128, 128, 0.5); 
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  padding: 15px;         
+  box-sizing: border-box;     
+  overflow: hidden;           /* Evita que textos muito longos estiquem o quadrado para baixo */
+} 
+
+.OptionTitles { 
+  color: #000000; 
+  font-size: 1.1rem;         
+  font-weight: bold; 
+  margin: 0 0 5px 0;         
+} 
+
+.OptionSubtitles { 
+  color: #6d6d6d; 
+  font-size: 0.8rem;         
+  font-weight: normal;        
+  margin: 0;                  
+  line-height: 1.3;           
 }
